@@ -115,6 +115,7 @@
                  (member current-theme cycle-themes-last-theme-set))
       (disable-theme current-theme))
     (load-theme new-theme t)
+    (print new-theme)
     (setq cycle-themes-last-theme-set current-theme-set)
     (run-hooks 'cycle-themes-after-cycle-hook)))
 
